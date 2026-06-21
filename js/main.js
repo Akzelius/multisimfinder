@@ -2,7 +2,7 @@ const simDataHolder = new SimData();
 
 document.addEventListener("DOMContentLoaded", async e => {
 
-    console.log(`%c LegacySO FriendFinder ${VERSION_STR} `, "color: yellow; background-color: purple; font-size: 1.9em;");
+    console.log(`%c MultiSimFinder ${VERSION_STR} `, "color: yellow; background-color: purple; font-size: 1.9em;");
     console.log(`%c A website by Gurra based on Reaganomics Lamborghini's SimFinder `, "color: yellow; background-color: purple;");
 
     simFinderMain.start();

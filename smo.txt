@@ -1,1 +1,1 @@
-{"Check newspaper for SMO percentages":"1000"}
+{"Check newspaper for SMO percentages":"0"}

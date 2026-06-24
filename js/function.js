@@ -34,7 +34,7 @@ simUtils = function() {
         let utcNow = new Date(new Date().getTime());
         utcNow.setDate(utcNow.getDate() - returnSimAge(unixTime));
 
-        let yyyy = ("" + utcNow.getFullYear()).slice(2);
+        let yyyy = ("" + utcNow.getFullYear()).slice(0);
         let mm = ("0" + (utcNow.getMonth() + 1)).slice(-2);
         let dd = ("0" + (utcNow.getDate())).slice(-2);
 
@@ -44,7 +44,8 @@ simUtils = function() {
     // Format {mm, dd, yyyy} as a fancy string with slashes
     function returnTextDateFromDateObject(dateObject) {
 
-        return dateObject.month + "/" + dateObject.day + "/" + dateObject.year;
+        // return dateObject.month + "/" + dateObject.day + "/" + dateObject.year;
+		return dateObject.year + "-" + dateObject.month + "-" + dateObject.day;
     }
 
     // Return sim time [HH, MM] in a 24 hour format
